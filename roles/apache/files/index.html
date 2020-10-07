@@ -47,35 +47,40 @@
 				padding: 1em 5em;
 			}
 			.content-columns {
-				/* Setting relative positioning allows for 
-				absolute positioning for sub-classes */
 				position: relative;
 				padding-top: 1em;
 			}
 			.content-column-left {
-				/* Value for IE/Win; will be overwritten for other browsers */
 				width: 47%;
 				padding-right: 3%;
 				float: left;
 				padding-bottom: 2em;
+                position: absolute;
+                top: 310px;
 			}
 			.content-column-left hr {
 				display: none;
 			}
-			.content-column-right {
-				/* Values for IE/Win; will be overwritten for other browsers */
+			.content-column-right { 
 				width: 47%;
 				padding-left: 3%;
 				float: left;
 				padding-bottom: 2em;
-			}
-			.content-columns>.content-column-left, .content-columns>.content-column-right {
-				/* Non-IE/Win */
+                position: absolute;
+                left: 597px;
+                top: 310px;
 			}
 			img {
 				border: 2px solid #fff;
-				padding: 2px;
-				margin: 2px;
+				padding: 0px;
+	    		margin: 0px;
+                position: absolute;
+                left: -671px;
+                top: -417px;
+                width: 1325px;
+                height: 133px;
+                margin: 175px 1px;
+}
 			}
 			a:hover img {
 				border: 2px solid #f50;
@@ -114,7 +119,7 @@
 
                                         <p>You are free to use the image below on web sites powered by the Apache HTTP Server:</p>
 					
-                                        <p align="center"><a href="http://httpd.apache.org/"><img src="/icons/apache_pb2.gif" alt="[ Powered by Apache ]"/></a></p>
+                                        <p ><a href="http://httpd.apache.org/"><img src="/icons/apache_pb2.gif" alt="[ Powered by Apache ]"/></a></p>
 
 				</div>
 			</div>
